@@ -1,0 +1,60 @@
+.square{	
+	position: relative;
+	float:left;
+	width:33.3%;
+	height:33%;
+	border:2px solid #ebebeb;
+	box-sizing: border-box;
+	/* background:red; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.svgContainer1.winner{
+	transform: scale(1.4);
+}
+.svgContainer2.winner{
+	transform: scale(1.4);
+}
+
+.path, .path2{
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+}
+.path.filled{
+	animation-name: dash;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.path2.filled{
+	animation-delay: 0.5s;
+	animation-name: dash;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.svgContainer1{
+	transoform: scale(1);
+	transition: all 0.3s ease;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.svgContainer2{
+	width:100%;
+	height:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transoform: scale(1);
+	transition: all 0.3s ease;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

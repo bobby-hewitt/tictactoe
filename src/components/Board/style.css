@@ -1,0 +1,14 @@
+.board{
+	opacity:0.2;
+	margin:-5px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.outerBoard{
+	
+	width:292px;
+	height:292px;
+	overflow: hidden;
+	box-sizing: border-box;
+
+}

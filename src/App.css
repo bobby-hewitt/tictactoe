@@ -1,6 +1,16 @@
 .App {
   text-align: center;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:#d3d3d3;
+  /* background: linear-gradient(rgb(133,122,221), rgb(162,242,196)); */
 }
+/* rgb(133,122,221)
+
+rgb(162,242,196) */
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
